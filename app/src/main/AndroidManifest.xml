@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".model.AddUserActivity"></activity>
+        <activity android:name=".model.bmichart"></activity>
+        <activity android:name=".model.AddUserActivity" />
         <activity android:name=".model.RecycleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
