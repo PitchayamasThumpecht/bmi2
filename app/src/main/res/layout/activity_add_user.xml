@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pngtree_yellow_cute_wind_taobao_lynx_background_material_png_image_379959"
     tools:context=".model.AddUserActivity">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_marginTop="32dp"
         android:text="คำนวณค่า BMI"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,7 +60,7 @@
         android:ems="10"
         android:hint="กรุณากรอกส่วนสูง"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/bmi_chart_button"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/height_text"
@@ -137,7 +138,7 @@
         android:text="ส่วนสูง(cm)"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/bmi_chart_button"
+        app:layout_constraintBottom_toTopOf="@+id/cal_button"
         app:layout_constraintEnd_toStartOf="@+id/height_edit_text"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,44 +146,51 @@
 
     <Button
         android:id="@+id/exit_button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@android:drawable/button_onoff_indicator_on"
-        android:text="exit"
+        android:background="@drawable/exit_button"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save_button"
+        tools:layout_editor_absoluteY="640dp" />
+
+    <Button
+        android:id="@+id/cal_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/cal_button"
+        android:text="calculate"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/bmi_chart_button"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="573dp" />
+
+    <Button
+        android:id="@+id/bmi_chart_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/result_button"
+        android:shadowColor="#FFFFFF"
+        android:text="bmi chart"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cal_button"
         app:layout_constraintTop_toTopOf="@+id/cal_button" />
 
     <Button
-        android:id="@+id/cal_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginBottom="48dp"
-        android:background="@android:drawable/button_onoff_indicator_on"
-        android:text="calculate"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/exit_button"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/bmi_chart_button"
-        android:layout_width="190dp"
-        android:layout_height="76dp"
-        android:layout_marginBottom="120dp"
         android:background="#FFFFFF"
-        android:drawableBottom="@drawable/button2"
-        android:shadowColor="#FFFFFF"
-        android:text="bmi chart"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/exit_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="642dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

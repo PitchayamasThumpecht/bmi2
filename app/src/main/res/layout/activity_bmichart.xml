@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg3"
+    android:background="@drawable/_00c73f78d9c4aeca8f002c06c0ba2cb"
     tools:context=".model.bmichart">
 
     <ImageView
@@ -33,10 +33,9 @@
 
     <Button
         android:id="@+id/exit_button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableBottom="@android:drawable/button_onoff_indicator_off"
-        android:text="exit"
+        android:layout_width="163dp"
+        android:layout_height="70dp"
+        android:background="@drawable/exit_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

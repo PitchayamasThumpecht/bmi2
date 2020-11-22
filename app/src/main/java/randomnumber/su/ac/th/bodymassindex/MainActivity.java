@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import randomnumber.su.ac.th.bodymassindex.model.AddUserActivity;
-import randomnumber.su.ac.th.bodymassindex.model.RecycleActivity;
 
 public class MainActivity extends AppCompatActivity {
 
